@@ -54,7 +54,7 @@ function removeFromCart(item) {
     }
     i++;
   }
-    return('That item is not inyour cart.');
+    return('That item is not in your cart.');
   }
 
 function placeOrder(cardNumber) {
