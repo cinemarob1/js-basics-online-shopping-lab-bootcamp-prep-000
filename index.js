@@ -29,7 +29,7 @@ function viewCart() {
   }
   else{
     var sentence = [];
-    for(var i=0; i<cart.length;i++){
+    for(var i=0; i<cart.length-1;i++){
       sentence.push(' '+ cart[i].itemName + ' at $' + cart[i].itemPrice);
     }
     var j = cart.length - 1;
