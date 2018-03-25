@@ -32,7 +32,8 @@ function viewCart() {
     for(var i=0; i<cart.length;i++){
       sentence.push(cart[i].itemName + ' at ' + cart[i].itemPrice);
     }
-    return('In your cart, you have ' + sentence + ', and ' cart[cart.length].itemName + ' at ' + cart[cart.length].itemPrice + '.')
+    var j = cart.length
+    return('In your cart, you have ' + sentence + ', and ' cart[j].itemName + ' at ' + cart[j].itemPrice + '.')
   }
 }
 
