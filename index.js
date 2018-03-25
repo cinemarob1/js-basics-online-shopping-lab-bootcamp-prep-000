@@ -27,6 +27,13 @@ function viewCart() {
   else if (cart.length===2){
     return('In your cart, you have '+ cart[0].itemName +' at $'+ cart[0].itemPrice + ', and '+ cart[1].itemName +' at $'+ cart[1].itemPrice + '.');
   }
+  else{
+    var sentence = [];
+    for(var i=0; i<cart.length;i++){
+      sentence.push(cart[i].itemName + ' at ' + cart[i].itemPrice);
+    }
+    return('In your cart, you have ' + sentence + ', and ' cart[cart.length].itemName + ' at ' + cart[cart.length].itemPrice + '.')
+  }
 }
 
 function total() {
