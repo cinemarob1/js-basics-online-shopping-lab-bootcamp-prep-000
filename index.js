@@ -51,7 +51,9 @@ function removeFromCart(item) {
       cart.splice(i, 1);
       return(cart);
     }
-    return('')
+    i++;
+  }
+    return('That item is not inyour cart.');
   }
 }
 
