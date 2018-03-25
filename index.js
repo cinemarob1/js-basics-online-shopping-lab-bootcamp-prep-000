@@ -25,7 +25,7 @@ function viewCart() {
     return('In your cart, you have ' + cart[0].itemName + ' at $' + cart[0].itemPrice + '.');
   }
   else if (cart.length===2){
-    console.log('In your cart, you have '+ cart[0].itemName +' at $'+ cart[0].itemPrice + ', and '+ cart[1].itemName +' at $'+ cart[1].itemPrice + '.')
+    return('In your cart, you have '+ cart[0].itemName +' at $'+ cart[0].itemPrice + ', and '+ cart[1].itemName +' at $'+ cart[1].itemPrice + '.');
   }
 }
 
